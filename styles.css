@@ -11,23 +11,23 @@
             /*animation: zoom 20s infinite alternate;*/
             height: 100%;
             width: 100%;
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
         }
-        .erde{
+
+        .erde {
             border-radius: 20em;
-            float:left;
+            float: left;
         }
 
-         .content {
-            position: relative;
-            z-index: 1;
+        .absatz {
+            margin:1em;
+            float:left;
         }
 
         footer {
             display: block;
-            position: absolute;
             bottom: 1em;
             background-color: rgb(131, 230, 38);
             padding: 1em;
