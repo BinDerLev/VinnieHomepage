@@ -6,7 +6,7 @@
     "configurations": [
         
         {
-            "type": "firefox",
+            "type": "chrome",
             "request": "launch",
             "name": "Open index.html",
             "file": "/home/audio/Projects/VinnieHomepage/index.html"

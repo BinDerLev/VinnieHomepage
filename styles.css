@@ -17,11 +17,12 @@
         }
 
         .erde {
-            border-radius: 20em;
+            border-radius: 5em;
             float: left;
         }
 
         .absatz {
+            font-size: 2em;
             margin:1em;
             float:left;
         }
