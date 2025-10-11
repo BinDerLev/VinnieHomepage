@@ -27,17 +27,19 @@
             float:left;
         }
 
-        footer {
+        footer.absatz {
             display: block;
             bottom: 1em;
-            background-color: rgb(131, 230, 38);
+            background-color: rgb(246, 35, 35);
             padding: 1em;
-            border: 2px solid rgb(5, 191, 238);
+            border: 2px solid rgba(50, 37, 37, 0);
             border-radius: 0.5em;
+            font-family:'Courier New', Courier, monospace;
+            font-size:5em;
         }
 
         footer a {
-            color: black;
+            color: rgb(3, 3, 189);
             text-decoration: none;
 
 
