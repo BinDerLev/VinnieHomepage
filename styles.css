@@ -30,9 +30,9 @@
         footer.absatz {
             display: block;
             bottom: 1em;
-            background-color: rgb(246, 35, 35);
+            background-color: #f62323;
             padding: 1em;
-            border: 2px solid rgba(50, 37, 37, 0);
+            border: 5px solid rgb(8, 25, 177);
             border-radius: 0.5em;
             font-family:'Courier New', Courier, monospace;
             font-size:5em;
