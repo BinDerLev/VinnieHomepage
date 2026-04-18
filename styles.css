@@ -1,46 +1,57 @@
-        .background {
-            z-index: -1;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            color: white;
-            text-align: center;
-            background-image: url('sterne.avif');
-            background-size: cover;
-            background-position: center;
-            /*animation: zoom 20s infinite alternate;*/
-            height: 100%;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-        }
+body{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #f62323;
 
-        .erde {
-            border-radius: 5em;
-            float: left;
-        }
+}
+h1{
+    font-family: 'Times New Roman', Times, serif
+}
+.background {
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    background-image: url('sterne.avif');
+    background-size: cover;
+    background-position: center;
+    /*animation: zoom 20s infinite alternate;*/
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
 
-        .absatz {
-            font-size: 2em;
-            margin:1em;
-            float:left;
-        }
+.erde {
+    border-radius: 5em;
+    float: left;
+}
 
-        footer.absatz {
-            display: block;
-            bottom: 1em;
-            background-color: #f62323;
-            padding: 1em;
-            border: 5px solid rgb(8, 25, 177);
-            border-radius: 0.5em;
-            font-family:'Courier New', Courier, monospace;
-            font-size:5em;
-        }
+.absatz {
+    font-size: 1em;
+    margin: 1em;
+    float: left;
+}
 
-        footer a {
-            color: rgb(3, 3, 189);
-            text-decoration: none;
+footer.absatz {
+    display: block;
+    bottom: 1em;
 
+    font-family: 'Courier New', Courier, monospace;
+    font-size: .7em;
+}
 
-        }
+footer a {
+    display: block;
+    background-color: #f62323;
+    border: 5px solid rgb(8, 25, 177);
+
+    color: rgb(3, 3, 189);
+    text-decoration: none;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 0.5em;
+
+}
