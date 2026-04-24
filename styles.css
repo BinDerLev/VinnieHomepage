@@ -1,11 +1,13 @@
 body{
-    font-size: 3vw;
+    margin: 0;
+    padding: 0;
+    font-size: 2vw;
     font-family: 'Courier New', Courier, monospace;
-    color: #f62323;
-
+    color: white;
 }
 h1{
-    font-family: 'Times New Roman', Times, serif
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 0;
 }
 .background {
     z-index: -1;
@@ -31,8 +33,12 @@ h1{
 
 .absatz {
     font-size: 1em;
-    margin: 1em;
+    margin: 2em;
     float: left;
+    max-width: 40%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1.5em;
+    border-radius: 1em;
 }
 
 footer.absatz {
