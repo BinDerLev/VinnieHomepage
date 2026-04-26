@@ -2,8 +2,10 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Das Meer - Kraft & Tiefe</title>
     <style>
+        /* Einblend-Animation */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(30px); }
             to { opacity: 1; transform: translateY(0); }
@@ -12,26 +14,51 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
-            padding: 40px 20px;
+            padding: 100px 20px 60px; /* Genug Platz für den festen Button */
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-image: url('https://dreamstime.com');
+            background-image: url('https://unsplash.com');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
             background-color: #001a33;
         }
 
+        /* Fester Home-Button oben links */
+        .home-button {
+            position: fixed; /* Klebt fest beim Scrollen */
+            top: 25px;
+            left: 25px;
+            text-decoration: none;
+            color: white;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 12px 24px;
+            border-radius: 30px;
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            font-size: 0.95em;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .home-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+        }
+
         .container {
             max-width: 700px;
             text-align: center;
-            background-color: rgba(0, 15, 30, 0.65);
+            background-color: rgba(0, 15, 30, 0.75);
             padding: 60px;
             border-radius: 40px;
             box-shadow: 0 30px 70px rgba(0,0,0,0.6);
-            backdrop-filter: blur(15px);
+            backdrop-filter: blur(20px);
             border: 1px solid rgba(255, 255, 255, 0.1);
             color: #ffffff;
             animation: fadeIn 1.8s ease-out forwards;
@@ -54,19 +81,19 @@
         }
 
         p {
-            font-size: 1.15em;
+            font-size: 1.2em;
             line-height: 1.8;
             margin-bottom: 30px;
-            color: #f0f0f0;
-            text-align: justify; /* Blocksatz für ein ruhigeres Schriftbild */
+            color: #f5f5f5;
         }
 
         .highlight-box {
             background-color: rgba(255, 255, 255, 0.05);
-            padding: 20px;
-            border-radius: 15px;
+            padding: 25px;
+            border-radius: 20px;
             margin: 40px 0;
             border-left: 4px solid #b0e0e6;
+            text-align: left;
         }
 
         .nature-protection {
@@ -79,6 +106,10 @@
     </style>
 </head>
 <body>
+
+<!-- Der feste Link zu deiner GitHub Hauptseite -->
+<a href="https://github.io" class="home-button">← Zurück nach Hause</a>
+
 <div class="container">
     <h1 class="main-title">Das Meer</h1>
     <h2 class="sub-title">Unendliches Blau</h2>
@@ -88,15 +119,19 @@
     </p>
 
     <p>
-        In den verborgenen Tiefen, weit unter der glitzernden Oberfläche, ruht eine Welt, die wir erst in Ansätzen verstehen. Dort unten, wo kein Sonnenstrahl mehr hingelangt, existieren Lebensformen, die wie aus einer anderen Welt wirken. Die Tiefsee ist das letzte große Mysterium unseres Planeten – ein stilles Archiv der Erdgeschichte.
+        In den verborgenen Tiefen, weit unter der glitzernden Oberfläche, ruht eine Welt, die wir erst in Ansätzen verstehen. Dort unten, wo kein Sonnenstrahl mehr hingelangt, existieren Lebensformen, die wie aus einer anderen Welt wirken. Die Tiefsee ist das letzte große Mysterium unseres Planeten.
     </p>
 
     <div class="highlight-box">
-        Seit Anbeginn der Menschheit zieht uns das weite Blau magisch an. Es ernährt uns, es verbindet Kontinente und es fordert unseren Respekt. Wer einmal am Ufer stand und den Blick am Horizont verloren hat, weiß: Das Meer gibt uns das Gefühl von Freiheit zurück, das wir im Alltag oft vermissen.
+        Seit Anbeginn der Menschheit zieht uns das weite Blau magisch an. Es ernährt uns, es verbindet Kontinente und es fordert unseren Respekt. Wer einmal am Ufer stand und den Blick am Horizont verloren hat, weiß: Das Meer gibt uns das Gefühl von Freiheit zurück.
     </div>
 
+    <p>
+        Die ständige Bewegung von Ebbe und Flut erinnert uns an den Kreislauf des Lebens. Nichts bleibt stehen, alles fließt. Diese Beständigkeit im Wandel schenkt uns Hoffnung und zeigt, dass nach jedem Sturm auch wieder die Ruhe einkehrt.
+    </p>
+
     <p class="nature-protection">
-        Doch diese Unendlichkeit ist zerbrechlich. Unsere Meere sind die Lungen unseres Planeten. Plastikmüll und der Klimawandel bedrohen dieses kostbare Gleichgewicht. Es liegt in unserer Hand, diesen Lebensraum zu bewahren, damit auch künftige Generationen die heilende Kraft der Wellen spüren können.
+        Doch diese Unendlichkeit ist zerbrechlich. Unsere Meere sind die Lungen unseres Planeten. Plastikmüll und der Klimawandel bedrohen dieses kostbare Gleichgewicht. Es liegt in unserer Hand, diesen Lebensraum zu bewahren.
     </p>
 </div>
 </body>
