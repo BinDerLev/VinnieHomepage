@@ -14,21 +14,22 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
-            padding: 100px 20px 60px; /* Genug Platz für den festen Button */
+            padding: 100px 20px 60px;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-image: url('https://unsplash.com');
+            /* Hintergrund: Dunkles Blau-Verlauf (da externe Bilder oft blockiert werden) */
+            background: linear-gradient(135deg, #001a33 0%, #003366 100%);
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-            background-color: #001a33;
+            color: #ffffff;
         }
 
         /* Fester Home-Button oben links */
         .home-button {
-            position: fixed; /* Klebt fest beim Scrollen */
+            position: fixed;
             top: 25px;
             left: 25px;
             text-decoration: none;
@@ -48,7 +49,6 @@
         .home-button:hover {
             background: rgba(255, 255, 255, 0.3);
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
         }
 
         .container {
@@ -60,7 +60,6 @@
             box-shadow: 0 30px 70px rgba(0,0,0,0.6);
             backdrop-filter: blur(20px);
             border: 1px solid rgba(255, 255, 255, 0.1);
-            color: #ffffff;
             animation: fadeIn 1.8s ease-out forwards;
         }
 
@@ -68,7 +67,6 @@
             font-size: clamp(3em, 8vw, 5.5em);
             margin: 0;
             line-height: 1.1;
-            text-shadow: 0 5px 15px rgba(0,0,0,0.5);
         }
 
         h2.sub-title {
@@ -101,14 +99,12 @@
             padding-top: 30px;
             font-style: italic;
             color: #d1eaee;
-            font-size: 1.1em;
         }
     </style>
 </head>
 <body>
 
-<!-- Der feste Link zu deiner GitHub Hauptseite -->
-<a href="https://github.io" class="home-button">← Zurück nach Hause</a>
+<a href="index.html" class="home-button">← Zurück nach Hause</a>
 
 <div class="container">
     <h1 class="main-title">Das Meer</h1>
@@ -125,10 +121,6 @@
     <div class="highlight-box">
         Seit Anbeginn der Menschheit zieht uns das weite Blau magisch an. Es ernährt uns, es verbindet Kontinente und es fordert unseren Respekt. Wer einmal am Ufer stand und den Blick am Horizont verloren hat, weiß: Das Meer gibt uns das Gefühl von Freiheit zurück.
     </div>
-
-    <p>
-        Die ständige Bewegung von Ebbe und Flut erinnert uns an den Kreislauf des Lebens. Nichts bleibt stehen, alles fließt. Diese Beständigkeit im Wandel schenkt uns Hoffnung und zeigt, dass nach jedem Sturm auch wieder die Ruhe einkehrt.
-    </p>
 
     <p class="nature-protection">
         Doch diese Unendlichkeit ist zerbrechlich. Unsere Meere sind die Lungen unseres Planeten. Plastikmüll und der Klimawandel bedrohen dieses kostbare Gleichgewicht. Es liegt in unserer Hand, diesen Lebensraum zu bewahren.
